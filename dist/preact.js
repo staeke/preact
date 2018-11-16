@@ -228,7 +228,7 @@
             inst.constructor = Ctor;
             inst.render = doRender;
         }
-        inst.__b = (options.reclaimRecycledBase || reclaimRecycledBase)(Ctor);
+        inst.__b = (options.reclaimRecycledBase || reclaimRecycledBase)(Ctor, props, context);
         return inst;
     }
     function doRender(props, state, context) {

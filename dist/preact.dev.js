@@ -438,7 +438,7 @@
 			inst.render = doRender;
 		}
 
-		inst.nextBase = (options.reclaimRecycledBase || reclaimRecycledBase)(Ctor);
+		inst.nextBase = (options.reclaimRecycledBase || reclaimRecycledBase)(Ctor, props, context);
 
 		return inst;
 	}
